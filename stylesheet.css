@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background-color: #F9FAFB;
+}
+h1 {
+    font-family: "Poppins";
+}
+p {
+    font-size: 0.85rem;
+    font-family: "Poppins",sans-serif;
+    color:#6C727F;
+    width: 515px;
+    margin:auto;
+    
+}
+img {
+    width: 40px;
+}
+main {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap:15px;
+}
+input, button {
+    font-size:12px;
+    text-align: center;
+    width: 90%;
+    height: 30%;
+    border-radius: 10px;
+    border: none;
+}
+input {
+    background-color: #F9FAFB;
+    border:1px solid #6c727f2c;
+    
+}
+input:focus{
+    border: 1px solid #284BCE;
+    outline:none;
+}
+button {
+    color:white;
+    background-color: #284BCE;
+    transition: 0.5s;
+}
+button:hover {
+    cursor: pointer;
+    background-color: #1c2a58;
+    transform: scale(105%);
+}
+main div {
+    background-color: #FFFFFF;
+    padding:15px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap:20px;
+    align-items: center;
+    width:375px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(128, 128, 128, 0.212);
+    margin:20px auto;
+    transition: 0.5s;    
+}
+main div:hover {
+    transform: scale(105%);
+}
+main div p {
+    width: 300px;
+    text-align: center;
+    font-size:0.60rem;
+}
+.author-info {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 16px;
+    color: rgb(55, 65, 81);
+}
+
+.author-info a {
+    text-decoration: none;
+}
+
+@media (max-width: 640px)
+{
+    h1 {
+        font-size: 1.5rem;
+        
+    }
+    main > p {
+        width: 90vw;
+    }
+    main div {
+        width: 90vw;
+        margin:50px auto;
+    }
+}
